@@ -10,6 +10,9 @@ get_header();
 			get_template_part('templates-parts/content','archive');
 		}
 	}
+	else{
+		echo '<h1>No Post Found</h1>';
+	}
 
 	?>
 

@@ -46,4 +46,34 @@
 
  add_action('wp_enqueue_scripts','customthemedev_register_scripts');
 
+
+
+//  adding widgetbar t0 theme
+function customthemedev_widget_areas(){
+      register_sidebar(
+            array(
+                  'before_title' => '',
+                  'aftet_title' => '',
+                  'before_widget' => '<ul class="social-list list-inline py-3 mx-auto">',
+                  'after_widget' => '</ul>',
+                  'name' => 'Sidebar Area',
+                  'id' => 'sidebar-1',
+                  'description' => 'sidebar widget area'
+            )           
+      );
+      register_sidebar(
+            array(
+                  'before_title' => '',
+                  'aftet_title' => '',
+                  'before_widget' => '',
+                  'after_widget' => '',
+                  'name' => 'Footer Area',
+                  'id' => 'footer-1',
+                  'description' => 'foter widget area'
+            )       
+      );
+}
+
+add_action('widgets_init','customthemedev_widget_areas');
 ?>
+
