@@ -2,7 +2,8 @@
 // to get title of the page and add image logo to dynamically
  function customthemedev_theme_support(){
        add_theme_support('title-tag');
-       add_theme_support('custom-log');
+       add_theme_support('custom-logo');
+       add_theme_support('post-thumbnails');
  }
  add_action('after_setup_theme','customthemedev_theme_support');
 
