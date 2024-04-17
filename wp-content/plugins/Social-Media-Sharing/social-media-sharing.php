@@ -16,7 +16,7 @@ function add_social_media_sharing_buttons($content) {
     $twitter_url = 'https://twitter.com/intent/tweet?url=' . urlencode($permalink);
     $linkedin_url = 'https://www.linkedin.com/sharing/share-offsite/?url=' . urlencode($permalink);
     
-    // Output HTML for sharing buttons
+    // Output HTML for sharing buttons in wordpres
     $buttons_html = '
     <div class="social-media-sharing">
         <a href="' . $facebook_url . '" target="_blank" class="social-button facebook">Share on Facebook</a>
