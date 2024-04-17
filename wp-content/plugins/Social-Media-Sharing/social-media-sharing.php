@@ -3,7 +3,7 @@
 Plugin Name: Social Media Sharing Buttons
 Description: Add customizable social media sharing buttons to WordPress posts and pages.
 Version: 1.0
-Author: Your Name
+Author: Akhil H S
 */
 
 // Add social media sharing buttons to the_content
